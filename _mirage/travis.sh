@@ -8,6 +8,3 @@ export OPAMYES=1
 opam init
 opam install mirage
 eval `opam config env`
-
-mirage configure --$MIRAGE_BACKEND
-mirage build

@@ -1,7 +1,7 @@
 sudo: required
 language: c
-before_script: cd _mirage
-script: bash -ex travis.sh
+before_script: "cd _mirage && bash -ex ./travis.sh"
+script: "bash -ex ./build && ls -al static-www.*"
 env:
   matrix:
   - MIRAGE_BACKEND=xen DEPLOY=0
