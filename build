@@ -1,0 +1,19 @@
+#!/bin/bash
+set -e -E -u
+
+NAME=$(basename $PWD)
+TOP_DIR=$PWD
+BUILD_DIR=_build
+
+mkdir -p $BUILD_DIR
+cp config.ml dispatch.ml $BUILD_DIR
+eval $(opam config env)
+
+cd $BUILD_DIR
+
+PORT=80 NET=DIRECT DHCP=true mirage configure --xen
+rm -f *.xen*
+make
+#bzip2 *.xen
+#cp *.xen.bz2 $TOP_DIR/$NAME.xen.bz2
+cp *.xen $TOP_DIR/$NAME.xen
