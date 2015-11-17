@@ -1,5 +1,7 @@
 # static-www
 
+[![Build Status](https://api.travis-ci.org/unikernlz/static-www.svg?branch=master)](https://travis-ci.org/unikernlz/static-www.svg)
+
 based on [mirage os](https://mirage.io/)
 
 *most parts are ~~blatantly copied from~~ based on the [formidable mirage-skeleton](https://github.com/mirage/mirage-skeleton) project*
