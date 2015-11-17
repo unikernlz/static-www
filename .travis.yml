@@ -1,6 +1,6 @@
 sudo: required
 language: c
-before_script: bash -ex ./travis.sh
+before_script: bash -ex _mirage/travis.sh
 script: "bash -ex ./build && ls -al static-www.*"
 env:
   matrix:
