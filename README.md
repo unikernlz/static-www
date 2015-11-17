@@ -2,10 +2,13 @@
 
 [![Build Status](https://api.travis-ci.org/unikernlz/static-www.svg?branch=master)](https://travis-ci.org/unikernlz/static-www.svg)
 
-based on [mirage os](https://mirage.io/)
+* build a unikernel with httpd server and static content, using [mirage os](https://mirage.io/),
 
-*most parts are ~~blatantly copied from~~ based on the [formidable mirage-skeleton](https://github.com/mirage/mirage-skeleton) project*
+* most parts ~~blatantly copied from~~ based on the formidable [mirage-skeleton](https://github.com/mirage/mirage-skeleton) project,
 
+* integration build runs on [travis-ci](https://travis-ci.org/),
+
+* release deployment via [travis deployment](http://docs.travis-ci.com/user/deployment/releases/)
 
 
 ## tl;dr
