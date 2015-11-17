@@ -1,3 +1,4 @@
+sudo: required
 language: c
 before_script: cd _mirage
 script: bash -ex travis.sh
