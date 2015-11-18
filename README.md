@@ -1,6 +1,6 @@
 # static-www
 
-[![Build Status](https://api.travis-ci.org/unikernlz/static-www.svg?branch=master)](https://travis-ci.org/unikernlz/static-www.svg)
+[![Build Status](https://api.travis-ci.org/unikernlz/static-www.svg?branch=master)](https://travis-ci.org/unikernlz/static-www)
 
 * build a unikernel with httpd server and static content, using [mirage os](https://mirage.io/),
 
