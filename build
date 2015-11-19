@@ -1,13 +1,13 @@
 #!/bin/bash
 set -e -E -u
 
-: ${COMPRESS_IMAGE:=}
-echo $COMPRESS_IMAGE
+: ${COMPRESS_IMAGE:=} ${NET:=DIRECT} ${DHCP:=true}
 
 NAME=$(basename $PWD)
 XEN_IMAGE=$NAME.xen
 TOP_DIR=$PWD
 BUILD_DIR=$PWD/_build
+
 
 eval $(opam config env)
 
@@ -16,7 +16,7 @@ mkdir -p $BUILD_DIR
 cp config.ml dispatch.ml $BUILD_DIR
 
 cd $BUILD_DIR
-NET=DIRECT DHCP=true mirage configure --xen
+NET=$NET DHCP=$DHCP mirage configure --xen
 rm -f *.xen*
 make
 cd $TOP_DIR
